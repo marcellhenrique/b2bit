@@ -25,11 +25,11 @@ const ProfileInfo: React.FC = () => {
   }, []);
 
   if (error) {
-    return <p>{error}</p>;
+    return <p className="mx-auto my-auto">{error}</p>;
   }
 
   if (!profile) {
-    return <p>Carregando...</p>;
+    return <p className="mx-auto my-auto">Carregando...</p>;
   }
 
   return (
